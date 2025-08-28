@@ -1,0 +1,349 @@
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    }
+
+    .container {
+    max-width: 1200px;
+    margin: auto;
+    }
+
+    .header_container {
+    background-image: url("../images/01\ 1.png");
+    z-index: 999;
+    
+    background-repeat: no-repeat;
+    }
+
+    .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    .nav {
+    display: flex;
+    gap: 20px;
+    }
+    .nav h2 {
+    width: 193px;
+    height: 43px;
+    font-size: 12px;
+    margin-top: 20px;
+    word-wrap: break-word;
+    color: white;
+    }
+    .left img {
+    width: 84px;
+    height: 36px;
+    padding: 20px;
+    }
+    .header_inf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+    width: 500px;
+    height: 400px;
+
+    margin: 170px;
+    font-size: 18px;
+    }
+    .header_inf p {
+    font-size: 24px;
+    }
+
+    .header_btn button {
+    width: 150px;
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    }
+
+    .hero {
+    margin-top: 100px;
+    }
+
+    .hero_ifo {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+    }
+    .hero_text {
+    width: 500px;
+    height: 400px;
+    }
+
+
+/* Hero bo‘limi */
+
+.element {
+    width: 90%;
+    margin: 40px auto;
+    font-family: Arial, sans-serif;
+    color: #000;
+}
+
+.element_p p {
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.element_cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.element_divs {
+    max-width: 180px;
+}
+
+.element_divs h2 {
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0;
+    color: #000;
+}
+
+.element_divs p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-top: 8px;
+}
+
+.element_divs:first-child p {
+    display: inline-block;
+    border: 1px solid #5e2ca5;
+    padding: 2px 6px;
+    font-size: 12px;
+    color: #5e2ca5;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+    .how_much_text {
+    display: flex;
+    gap: 40px;
+    }
+    .how_much h2 {
+    margin-left: 570px;
+    }
+
+    .how_much_left {
+    width: 360px;
+    height: 400px;
+    }
+    .how_much_left :nth-child(3) {
+    background-color: blue;
+    }
+
+    /* ----------------- RESPONSIVE ----------------- */
+
+    /* >= 992px (desktop large) */
+    /* @media (min-width: 992px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .header_inf {
+        margin: 150px auto;
+        text-align: left;
+    }
+
+    .hero_ifo {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .element_cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    } */
+
+    /* >= 768px (tablet) */
+    @media (max-width: 991px) and (min-width: 768px) {
+    .navbar {
+        flex-direction: row;
+    }
+
+    .header_inf {
+        margin: 200px;
+    }
+
+    .hero_ifo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero_ifo img{
+        width: 400px;
+        height: 400px;
+    }
+    .hero_text{
+        width: 500px;
+        height: 400px;
+    }
+
+.element_p{
+    width: 800px;
+}
+
+
+    .element_cards {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+    .element_divs{
+        display: flex;
+    }
+    .element_divs p{
+        margin-top:  40px;
+    }
+
+
+
+    .how_much_text {
+
+        align-items: center;
+        text-align: center;
+    }
+    .how_much_rigyt img {
+        width: 440px;
+        height: 400px;
+    }
+
+
+    }
+
+    @media (max-width: 767px) and (min-width: 576px) {
+    .header{
+        background-image:url("../images/Rectangle\ 52.png");
+        max-width: 100%;
+
+    }
+    
+        .navbar {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .left{
+        display:flex;
+        margin-right: 400px;
+    }
+    .right{
+        display: none;
+    }
+    .header_text h1,p{
+        color:white;
+    }
+    .header_text h1{
+        font-size: 30px;
+    }
+    .header_inf {
+        margin-right: 300px;
+        margin: 50px;
+        /* text-align: center; */
+    }
+    .header_btn{
+        flex-direction: column;
+    /* align-items: center;         */
+    }
+
+
+
+
+    .hero_ifo img {
+        width: 250px;
+        height: 302px;
+        /* height: auto; */
+    }
+
+.hero_ifo{
+    width: 400px;
+    height: auto;
+    
+}
+.hero_text {
+    display: flex;
+}
+
+
+
+    .element_cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .how_much_text {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    }
+
+    /* < 360px (kichkina telefonlar) */
+    @media (max-width: 360px) {
+    body {
+        font-size: 14px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header_text h1 {
+        font-size: 20px;
+    }
+
+    .header_btn button {
+        width: 100%;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .hero_text,
+    .how_much_left {
+        width: 100%;
+        height: auto;
+    }
+
+    .element_cards {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .element_divs p {
+        width: 100%;
+        padding: 10px;
+    }
+    }
